@@ -1,5 +1,5 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
 }
 
@@ -18,11 +18,14 @@ header {
     z-index: -1;
 }
 
+i {
+    font-size: 1.3rem;
+}
+
 .about-me-section {
     display: grid;
     grid-template-columns: 1fr auto auto 1fr;
     align-items: center;
-    gap: 10px;
     position: relative;
 }
 
@@ -61,9 +64,80 @@ header {
 }
 
 .about-me-container {
+    display: grid;
+    grid-template-rows: 40px 1fr 30px;
     grid-column: 3;
     max-width: 400px;
+    height: 200px;
     padding: 20px;
     background-color: white;
     box-shadow: 1.0px 1.9px 1.9px hsl(0deg 0% 0% / 0.47)
+}
+
+.about-me-heading {
+    text-align: center;
+}
+
+.about-me-text {
+    margin-top: 30px;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: end;
+}
+
+.icon {
+    margin: 0 5px 0 5px;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.my-work-heading {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: auto 1fr auto 1fr auto 1fr auto;
+    gap: 20px;
+}
+
+.projects-container {
+    box-shadow: 1.0px 1.9px 1.9px hsl(0deg 0% 0% / 0.47);
+    max-height: 300px;
+}
+
+.project-A, .project-B, .project-C {
+    grid-row: 1
+}
+
+.project-A, .project-D {
+    grid-column: 2
+}
+
+.project-B, .project-E {
+    grid-column: 4
+}
+
+.project-C, .project-F {
+    grid-column: 6
+}
+
+.project-image {
+    width: 100%; 
+    height: 65%; 
+    object-fit: cover;
+}
+
+footer {
+    background-color: rgb(98, 243, 168);
+}
+
+.spacer-div {
+    height: 40px;
 }
