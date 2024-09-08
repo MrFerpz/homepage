@@ -110,6 +110,7 @@ i {
 .projects-container {
     box-shadow: 1.0px 1.9px 1.9px hsl(0deg 0% 0% / 0.47);
     max-height: 300px;
+    overflow: hidden;
 }
 
 .project-A, .project-B, .project-C {
@@ -140,4 +141,48 @@ footer {
 
 .spacer-div {
     height: 40px;
+}
+
+.contact-me-grid-container {
+    display: grid;
+    grid-template-columns: auto 30% auto 50% auto;
+}
+
+.contact-me-text-parts {
+    grid-column: 2;
+}
+
+.contact-me-photo-container {
+    grid-column: 4;
+}
+
+.contact-me-photo {
+    box-shadow: 1.0px 1.9px 1.9px hsl(0deg 0% 0% / 0.47);
+}
+
+.contact-me-flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-list-2 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: start;
+}
+
+.contact-me-photo {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 5px 0 5px 0;
+}
+
+.project-description {
+    padding: 5px;
 }
