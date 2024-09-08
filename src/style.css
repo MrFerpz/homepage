@@ -228,11 +228,12 @@ footer {
         grid-template-rows: auto;
     }
     .contact-me-photo-container {
-        grid-row: 1;
+        grid-row: 2;
         grid-column: 1;
+        margin-top: 20px;
     }
     .contact-me-text-parts {
-        grid-row: 2;
+        grid-row: 1;
         grid-column: 1;
         padding: 10px;
     }
@@ -243,8 +244,61 @@ footer {
     .contact-me-heading {
         text-align: center;
     }
+    .spacer-div.spacer-bottom {
+        display: none;
+        height: 0px;
+    }
 }
 
 @media (max-width: 1000px) {
-
+    .pics {
+        position: relative;
+        left: 30%;
+    }
+    .about-me-container {
+        position: relative;
+        left: 10%;
+        top: 30%;
+        z-index: 1;
+    }
+    .about-me-heading {
+        margin-bottom: 5px;
+    }
+    .about-me-text {
+        margin-top: 10px;
+        padding: 15px;
+    }
+    .projects-grid {
+        grid-template-columns: auto 1fr auto 1fr auto;
+        grid-template-rows: auto;
+        padding: 20px;
+    }
+    .project-A {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .project-B {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    .project-C {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .project-D {
+        grid-column: 4;
+        grid-row: 2;
+    }
+    .project-E {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .project-F {
+        grid-column: 4;
+        grid-row: 3;
+    }
+    .project-description {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
 }
